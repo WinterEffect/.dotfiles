@@ -1,0 +1,23 @@
+rename -------- cw
+open ---------- enter 
+delete -------- xd + D
+copy ---------- yy
+cut ----------- dd
+copy ---------- pp
+show hidden --- zh
+
+new tab ------- Ctrl + n
+close tab ----- Ctrl + w
+next tab ------ tab
+prev tab ------ shift + tab
+
+create marker - m + <marker letter>
+delete marker - um + <marker letter>
+move to marker- ' + <marker letter>
+
+execute shell cmd - !
+execute ranger cmd - :
+change file premissions - chmod
+run terminal inside ranger - S
+
+switch view - ~    
