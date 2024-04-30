@@ -1,1 +1,5 @@
 # Ydotsfiles
+
+
+#### submodules
+* neovim config
