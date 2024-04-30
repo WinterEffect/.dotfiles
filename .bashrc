@@ -15,6 +15,9 @@ alias cp='cp -i'
 alias mkdir='mkdir -p'
 alias df='df -h'
 alias r='ranger && clear'
+alias vim='nvim'
+alias nv='nvim'
+alias vi='nvim'
 
 function extract {
   if [ -z "$1" ]; then
