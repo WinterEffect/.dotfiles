@@ -1,12 +1,16 @@
 DIR=$HOME/.config/wallpapers/ontime
 currenttime=$(date +%H:%M)
-if [[ "$currenttime" > "20:00" ]] && [[ "$currenttime" < "04:00" ]]; then
+if [[ "$currenttime" > "20:00" ]]; 
+then
     IMG=$DIR/night.webp
-elif [[ "$currenttime" > "04:00" ]] && [[ "$currenttime" < "11:00" ]]; then 
+elif [[ "$currenttime" > "04:00" ]]; 
+then 
     IMG=$DIR/morning.webp
-elif [[ "$currenttime" > "11:00" ]] && [[ "$currenttime" < "16:00" ]]; then
+elif [[ "$currenttime" > "11:00" ]]; 
+then
     IMG=$DIR/noon.webp
-else
+elif [[ "$currenttime" > "16:00" ]]; 
+then
     IMG=$DIR/afternoon.webp
 fi
 echo $IMG

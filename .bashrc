@@ -12,6 +12,9 @@ alias vim='nvim'
 alias nv='nvim'
 alias vi='nvim'
 alias history='history | cut -c 8- | fzf --height=~300'
+alias y='yazi'
+alias cat='bat'
+export EDITOR=nvim
 
 function extract {
   if [ -z "$1" ]; then
@@ -43,9 +46,9 @@ function extract {
 }
 
 alias extr='extract '
-
+pfp=~/.config/wallpapers/pngs/$(ls ~/.config/wallpapers/pngs |sort -R |tail -1)
 # PS1="\n\`if [ \$? = 0 ]; then echo \[\e[36m\]   \[\e[m\]; else echo \[\e[31m\] \[\e[0m\]; fi\` \[\e[38;5;27;1m\][\[\e[38;5;33m\] \u\[\e[38;5;27m\]]-[\[\e[38;5;33m\]  \h\[\e[38;5;27m\]]-[\[\e[38;5;33m\]  \@\[\e[38;5;27m\]]\[\e[0m\] \[\e[38;5;51;1m\] \w\n\[\e[38;5;27;1m\] 󱞪\[\e[0m\] "
-fastfetch
+fastfetch -l $pfp --logo-width 25
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 eval "$(zoxide init --cmd cd bash)"
